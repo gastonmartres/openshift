@@ -1,9 +1,6 @@
 <?php
 
-echo $_ENV['HEADER_1'];
-echo "<br>";
-echo $_ENV['HEADER_2'];
+print("Welcome to the Matrix: %s...", $_SERVER['REMOTE_ADDR']);
 
-echo "<br>";
-print_r($_SERVER);
+
 ?>
