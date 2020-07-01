@@ -1,8 +1,12 @@
-<?php
-printf("Welcome to the Matrix: %s...", $_SERVER['REMOTE_ADDR']);
-printf("\n");
-printf("Or did you mean: %s...?", $_SERVER['HTTP_X_FORWARDED_FOR']);
-printf("\n");
-printf("Hello, I'm %s...",$_SERVER['UNIQUE_ID']);
-printf("\n");
-?>
+<html>
+<head>
+<title>Pagina de prueba en PHP</title>
+<body>
+<h1>Welcome to the matrix <?=$_SERVER['REMOTE_ADDR'];?></h1>
+<br>
+<h2>Or did you mean <?=$_SERVER['HTTP_X_FORWARDED_FOR'];?><h2>
+<br>
+<br><h3>Hello I'm <?=$_SERVER['UNIQUE_ID'];?></h3>
+<br>
+</body>
+</html>
