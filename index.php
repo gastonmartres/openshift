@@ -9,5 +9,6 @@
         <br>
         <br><h3>Hello I'm <?=$_SERVER['UNIQUE_ID'];?></h3>
         <br>
+        <br><?=print_r($_SERVER);?>
     </body>
 </html>
